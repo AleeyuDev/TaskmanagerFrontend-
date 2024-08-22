@@ -5,8 +5,9 @@ import Task from "./Task";
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);
 
+  const apikey = process.env;
   const fetchTasks = async () => {
-    const response = await axios.get("/api/tasks/");
+    const response = await axios.get(`${apikey}/api/tasks/`);
     console.log(response.data);
     setTasks(response.data);
   };
