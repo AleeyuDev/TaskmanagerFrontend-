@@ -11,8 +11,8 @@ const Task = ({ task, fetchTasks }) => {
     <div className="">
       <div
         className="container  
-       py-5       w-full  mx-auto  md:flex">
-        <div className="bg-[#eee] rounded   py-4 p-4 mx-auto  max-w-sm   justify-center items-center">
+       py-5       w-full  mx-auto  ">
+        <div className="bg-[#eee] rounded   py-4 p-4  mx-auto  max-w-sm   justify-center items-center">
           <div className="">
             <div>
               <h3 className="text-lg font-bold  ">Title: {task.title}</h3>

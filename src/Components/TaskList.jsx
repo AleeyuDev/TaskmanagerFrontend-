@@ -20,7 +20,7 @@ const TaskList = () => {
       <div className="text-center mb-8 ">
         <h1 className="font-bold  text-2xl "> List of task created</h1>
       </div>
-      <div className="grid md:grid-cols-2 mx-auto  ">
+      <div className="grid md:grid-cols-2 mx-auto  md:gap-x-8 lg:mx-32 ">
         {tasks.map((task) => (
           <Task key={task.id} task={task} fetchTasks={fetchTasks} />
         ))}
